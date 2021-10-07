@@ -12,6 +12,7 @@ html {
 .page-wrapper {
   display: flex;
   flex-direction: row;
+  gap: 15px;
   max-width: 100%;
 }
 
@@ -20,36 +21,34 @@ html {
   display: flex;
   min-width: 25%;
   flex-direction: column;
+  gap: 15px;
 }
 .intro header {
   display: flex;
   flex-direction: column;
+  gap: 15px;
 }
 .intro header h1 {
-  padding: 15px;
-  margin: 15px 15px 0 15px;
+  padding: 25px;
   display: flex;
   font-size: 3.2em;
   background-color: #E93A37;
 }
 .intro header h2 {
-  padding: 15px;
-  margin: 15px 15px 0 15px;
+  padding: 25px;
   display: flex;
   font-size: 1.5em;
   flex-direction: column;
   background-color: #ffffff;
 }
 .intro .summary {
-  padding: 15px;
-  margin: 15px 15px 0 15px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   background-color: #bbbbbb;
 }
 .intro .preamble {
-  padding: 15px;
-  margin: 15px 15px 15px 15px;
+  padding: 25px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -62,63 +61,58 @@ html {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
+  gap: 15px;
 }
 .main .explanation {
-  margin: 15px 15px 15px 0;
-  padding: 15px;
+  padding: 25px;
   background-color: #ffffff;
 }
 .main .participation {
-  margin: 0 15px 15px 0;
-  padding: 15px;
+  padding: 25px;
   background-color: #ffffff;
 }
 .main .benefits {
-  margin: 0 15px 15px 0;
-  padding: 15px;
+  padding: 25px;
   background-color: #FCD91F;
 }
 .main .requirements {
-  margin: 0 15px 15px 0;
-  padding: 15px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
 }
 .main footer {
+  padding: 25px;
   width: 100%;
+  background-color: #bbbbbb;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.sidebar {
+.sidebar .wrapper {
   min-width: 300px;
-  min-height: 100%;
-  min-width: 20%;
   display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-.sidebar .design-selection {
-  padding: 15px;
-  margin: 15px 15px 15px 0;
+.sidebar .wrapper .design-selection {
+  padding: 25px;
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
   background-color: #000000;
   color: #ffffff;
 }
-.sidebar .design-archives {
-  padding: 15px;
-  margin: 15px 15px 15px 0;
+.sidebar .wrapper .design-archives {
+  padding: 25px;
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
   color: #ffffff;
   background-color: #273A86;
   height: 200px;
 }
-.sidebar .zen-resources {
-  padding: 15px;
-  margin: 15px 15px 15px 0;
+.sidebar .wrapper .zen-resources {
+  padding: 25px;
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
   background-color: #bbbbbb;
 }

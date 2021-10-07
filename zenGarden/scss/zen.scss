@@ -3,8 +3,8 @@
 
 $sans-serif-font: Arial, Helvetica, sans-serif;
 $serif-font: 'Lora', serif;
-$block-margin: 15px;
-$block-padding: 15px;
+$gap: 15px;
+$block-padding: 25px;
 
 $color-0: #000000;
 $color-1: #5E5E5E;
@@ -13,10 +13,6 @@ $color-3: #ffffff;
 $color-4: #E93A37;
 $color-5: #273A86;
 $color-6: #FCD91F;
-
-@mixin margins($top: $block-margin, $right: $block-margin, $bottom: $block-margin, $left: $block-margin) {
-    margin: $top $right $bottom $left;
-}
 
 @mixin padding() {
     padding: $block-padding;
@@ -33,7 +29,8 @@ html {
 
 .page-wrapper {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
+    gap: $gap; 
     max-width: 100%;
 }
 
@@ -42,19 +39,19 @@ html {
     display: flex;
     min-width: 25%;
     flex-direction: column;
+    gap: $gap;
     header {
         display: flex;
         flex-direction: column;
+        gap: $gap;
         h1 {
             @include padding();
-            @include margins($bottom: 0);
             display: flex;
             font-size: 3.2em;
             background-color: $color-4;
         }
         h2 {
             @include padding();
-            @include margins($bottom: 0);
             display: flex;
             font-size: 1.5em;
             flex-direction: column;
@@ -63,14 +60,12 @@ html {
     }
     .summary {
         @include padding();
-        @include margins($bottom: 0);
         display: flex;
         flex-direction: column;
         background-color: $color-2;
     }
     .preamble {
         @include padding();
-        @include margins();
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -84,52 +79,49 @@ html {
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
+    gap: $gap;
     .explanation {
-        @include margins($left: 0);
         @include padding();
         background-color: $color-3;
     }
     .participation {
-        @include margins($left: 0, $top: 0);
         @include padding();
         background-color: $color-3;
     }
     .benefits {
-        @include margins($top: 0, $left: 0);
         @include padding();
         background-color: $color-6;
     }
     .requirements {
-        @include margins($left: 0, $top: 0);
         @include padding();
         display: flex;
         flex-direction: column;
         background-color: $color-3;
     }
     footer {
+        @include padding();
         width: 100%;
+        background-color: #bbbbbb;
+        display: flex;
+        justify-content: space-evenly;
     }
 }
 
-.sidebar {
+.sidebar .wrapper {
     min-width: 300px;
-    min-height: 100%;
-    min-width: 20%;
     display: flex;
+    flex-direction: column;
+    gap: $gap;
     .design-selection {
         @include padding();
-        @include margins($left: 0);
         display: flex;
-        flex-grow: 1;
         flex-direction: column;
         background-color: $color-0;
         color: $color-3;
     }
     .design-archives {
         @include padding();
-        @include margins($left: 0);
         display: flex;
-        flex-grow: 1;
         flex-direction: column;
         color: $color-3;
         background-color: $color-5;
@@ -137,9 +129,7 @@ html {
     }
     .zen-resources {
         @include padding();
-        @include margins($left: 0);
         display: flex;
-        flex-grow: 1;
         flex-direction: column;
         background-color: $color-2;
     }
