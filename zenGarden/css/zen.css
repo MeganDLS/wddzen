@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #000000;
+  font-size: 1.4em;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+
+.intro {
+  color: #000;
+  display: flex;
+  min-width: 25%;
+  flex-direction: column;
+}
+.intro header {
+  display: flex;
+  flex-direction: column;
+}
+.intro header h1 {
+  padding: 15px;
+  margin: 15px 15px 0 15px;
+  display: flex;
+  font-size: 3.2em;
+  background-color: #E93A37;
+}
+.intro header h2 {
+  padding: 15px;
+  margin: 15px 15px 0 15px;
+  display: flex;
+  font-size: 1.5em;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.intro .summary {
+  padding: 15px;
+  margin: 15px 15px 0 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: #bbbbbb;
+}
+.intro .preamble {
+  padding: 15px;
+  margin: 15px 15px 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.main {
+  color: #000000;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+.main .explanation {
+  margin: 15px 15px 15px 0;
+  padding: 15px;
+  background-color: #ffffff;
+}
+.main .participation {
+  margin: 0 15px 15px 0;
+  padding: 15px;
+  background-color: #ffffff;
+}
+.main .benefits {
+  margin: 0 15px 15px 0;
+  padding: 15px;
+  background-color: #FCD91F;
+}
+.main .requirements {
+  margin: 0 15px 15px 0;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.main footer {
+  width: 100%;
+}
+
+.sidebar {
+  min-width: 300px;
+  min-height: 100%;
+  min-width: 20%;
+  display: flex;
+}
+.sidebar .design-selection {
+  padding: 15px;
+  margin: 15px 15px 15px 0;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  background-color: #000000;
+  color: #ffffff;
+}
+.sidebar .design-archives {
+  padding: 15px;
+  margin: 15px 15px 15px 0;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  color: #ffffff;
+  background-color: #273A86;
+  height: 200px;
+}
+.sidebar .zen-resources {
+  padding: 15px;
+  margin: 15px 15px 15px 0;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  background-color: #bbbbbb;
+}
+
+/*# sourceMappingURL=zen.css.map */
