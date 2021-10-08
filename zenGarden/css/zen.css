@@ -116,5 +116,26 @@ html {
   flex-direction: column;
   background-color: #bbbbbb;
 }
+a {
+  text-decoration: underline;
+  color: black;
+}
+
+a:hover {
+color: #273A86;
+}
+
+li a {
+  text-decoration: underline;
+  color: #bbbbbb;
+}
+
+li a:hover {
+  color: #E93A37;
+  }
+
+  .zen-resources a {
+color: #273A86;
+  }
 
 /*# sourceMappingURL=zen.css.map */
