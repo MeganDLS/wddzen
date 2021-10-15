@@ -9,18 +9,17 @@
   <meta name="author" content="Megan De León, Theran Meadows, and Lewis Lockhart">
   <meta name="description" content="Styleguide for Color Zen Garden - Advanced CSS for BYUI">
   <title>Styleguide for Color Zen Garden Group Project</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Concert+One&family=Poppins&display=swap"
-    rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Concert+One&family=Poppins&display=swap" rel="stylesheet" type="text/css">
   <!-- Resource style -->
-  <link rel="stylesheet" href="scss/style-guide.scss" />
+  <link rel="stylesheet" href="/index.HASH_REF_0d8524a15cd50b7f068fb1cefd58574d.css">
   <!-- Modernizr -->
-  <script src="js/modernizr.js"></script>
+  <script src="/index.HASH_REF_d1d6d1f9d6c205aa98cd1216aaafe13f.js"></script>
 </head>
 
 <body>
   <header>
     <!--by Lewis-->
-    <div class="cd-logo"><img src="assets/logo.svg" alt="Logo" /></div>
+    <div class="cd-logo"><img src="/logo.HASH_REF_e9bef47016e29016e411f31c272a18c5.svg" alt="Logo"></div>
     
     <nav>
       <ul class="cd-main-nav">
@@ -98,13 +97,13 @@
     <section id="icons" class="cd-icons">
       <h2>Icons</h2>
       <ul>
-        <li class="cd-box"><img src="assets/branding/logo-ver-1.jpg" alt="Logo version 1" /></li>
-        <li class="cd-box"><img src="assets/branding/logo-ver-2.jpg" alt="Logo version 2" /></li>
+        <li class="cd-box"><img src="/logo-ver-1.HASH_REF_c7ae132189b9f66f1d4670d26d6fa671.jpg" alt="Logo version 1"></li>
+        <li class="cd-box"><img src="/logo-ver-2.HASH_REF_019ee1b5b140ff3e2052d458ab867eea.jpg" alt="Logo version 2"></li>
       </ul>
 
       <ul>
-        <li><img src="assets/branding/favicon-1.jpg" alt="Favicon 1" /></li>
-        <li><img src="assets/branding/favicon-2.jpg" alt="Favicon 2" /></li>
+        <li><img src="/favicon-1.HASH_REF_683b91caa2027178adbbb8a67de86ebc.jpg" alt="Favicon 1"></li>
+        <li><img src="/favicon-2.HASH_REF_5c846f0942b0468ac61e965158cfd2f7.jpg" alt="Favicon 2"></li>
       </ul>
     </section>
     
@@ -162,11 +161,11 @@
       <h2>Wireframes</h2>
       <div class="cd-box">
         <figure>
-          <img src="assets/wireframe-sm.png" alt="Small screen wireframe" />
+          <img src="/wireframe-sm.HASH_REF_e2067c26314a481cfd57eabfd7a0f7c9.png" alt="Small screen wireframe">
           <figcaption>Small Screen</figcaption>
         </figure>
         <figure>
-          <img src="assets/wireframe-lg.png" alt="Large screen wireframe" />
+          <img src="/wireframe-lg.HASH_REF_efcc2485cab9c86ab98667e310933be0.png" alt="Large screen wireframe">
           <figcaption>Large Screen</figcaption>
         </figure>
       </div>
