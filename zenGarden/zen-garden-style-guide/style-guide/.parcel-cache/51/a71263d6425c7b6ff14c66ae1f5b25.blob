@@ -9,18 +9,17 @@
   <meta name="author" content="Megan De León, Theran Meadows, and Lewis Lockhart">
   <meta name="description" content="Styleguide for Color Zen Garden - Advanced CSS for BYUI">
   <title>Styleguide for Color Zen Garden Group Project</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Concert+One&family=Poppins&display=swap"
-    rel="stylesheet" type="text/css">
+  <link href="387682cbdf223f54e035231f52acaf7b" rel="stylesheet" type="text/css">
   <!-- Resource style -->
-  <link rel="stylesheet" href="scss/style-guide.scss" />
+  <link rel="stylesheet" href="11a54e647e37814b135a6f0ff22b5f24">
   <!-- Modernizr -->
-  <script src="js/modernizr.js"></script>
+  <script src="932d90d3eeeec95f906d78b52546ca5e"></script>
 </head>
 
 <body>
   <header>
     <!--by Lewis-->
-    <div class="cd-logo"><img src="assets/logo.svg" alt="Logo" /></div>
+    <div class="cd-logo"><img src="183d5a41924f9591938233cbc386b96d" alt="Logo"></div>
     
     <nav>
       <ul class="cd-main-nav">
@@ -98,13 +97,13 @@
     <section id="icons" class="cd-icons">
       <h2>Icons</h2>
       <ul>
-        <li class="cd-box"><img src="assets/branding/logo-ver-1.jpg" alt="Logo version 1" /></li>
-        <li class="cd-box"><img src="assets/branding/logo-ver-2.jpg" alt="Logo version 2" /></li>
+        <li class="cd-box"><img src="cfc7b1001ec374c28701c10170ce4d59" alt="Logo version 1"></li>
+        <li class="cd-box"><img src="a487354ddc117034da4a89a43594eb3a" alt="Logo version 2"></li>
       </ul>
 
       <ul>
-        <li><img src="assets/branding/favicon-1.jpg" alt="Favicon 1" /></li>
-        <li><img src="assets/branding/favicon-2.jpg" alt="Favicon 2" /></li>
+        <li><img src="15fc8f67b176cd374ea9d9db0093a507" alt="Favicon 1"></li>
+        <li><img src="6ed3491aae4ca1b8e886911c84742078" alt="Favicon 2"></li>
       </ul>
     </section>
     
@@ -162,11 +161,11 @@
       <h2>Wireframes</h2>
       <div class="cd-box">
         <figure>
-          <img src="assets/wireframe-sm.png" alt="Small screen wireframe" />
+          <img src="5ae7f68b571b397256516313ba39cea6" alt="Small screen wireframe">
           <figcaption>Small Screen</figcaption>
         </figure>
         <figure>
-          <img src="assets/wireframe-lg.png" alt="Large screen wireframe" />
+          <img src="eccdd275b5b7168309e76350e2118e76" alt="Large screen wireframe">
           <figcaption>Large Screen</figcaption>
         </figure>
       </div>
