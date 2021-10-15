@@ -355,7 +355,7 @@ input[type=checkbox] {
 .radio-label::after,
 .checkbox-label::after {
   left: 3px;
-  background: url("icon-check.e36d4d8a.svg") no-repeat center center;
+  background: url("icon-check.HASH_REF_eaa9a69c6932f57b56c8b272e36d4d8a.svg") no-repeat center center;
   display: none;
 }
 .radio-label::before {
@@ -389,7 +389,7 @@ input[type=checkbox]:checked + label::after {
   display: block;
   width: 16px;
   height: 16px;
-  background: url("icon-select.f8d42744.svg") no-repeat center center;
+  background: url("icon-select.HASH_REF_20f9fa8fb38a4e19bd3ffae1f8d42744.svg") no-repeat center center;
   pointer-events: none;
 }
 select {
@@ -628,7 +628,7 @@ header nav {
   right: 0;
   height: 100%;
   width: 80px;
-  background-image: url("icon-download.43a1d2d2.svg");
+  background-image: url("icon-download.HASH_REF_fa416327c329231891c4d7ee43a1d2d2.svg");
   background-position: center center;
   background-repeat: no-repeat;
   display: none;
@@ -958,28 +958,28 @@ section:nth-of-type(10) h2::before {
   margin: 1em;
 }
 .cd-icons .cd-icon-1 {
-  background-image: url("icon-1.f09de9b2.svg");
+  background-image: url("icon-1.HASH_REF_fec29673c8fe8ef1165d0cf5f09de9b2.svg");
 }
 .cd-icons .cd-icon-2 {
-  background-image: url("icon-2.74505a7a.svg");
+  background-image: url("icon-2.HASH_REF_46b2e967e2ffb5b8c144191b74505a7a.svg");
 }
 .cd-icons .cd-icon-3 {
-  background-image: url("icon-3.bcc4af98.svg");
+  background-image: url("icon-3.HASH_REF_79cc3db33e724e44630849bfbcc4af98.svg");
 }
 .cd-icons .cd-icon-4 {
-  background-image: url("icon-4.222e6830.svg");
+  background-image: url("icon-4.HASH_REF_2f6b2afed0927ba6ffdc3486222e6830.svg");
 }
 .cd-icons .cd-icon-5 {
-  background-image: url("icon-5.dd0f77d5.svg");
+  background-image: url("icon-5.HASH_REF_af144f7915db1742a2110270dd0f77d5.svg");
 }
 .cd-icons .cd-icon-6 {
-  background-image: url("icon-6.259c8c0a.svg");
+  background-image: url("icon-6.HASH_REF_dbbebf3ac36212806f6a6fa9259c8c0a.svg");
 }
 .cd-icons .cd-icon-7 {
-  background-image: url("icon-7.efa0e026.svg");
+  background-image: url("icon-7.HASH_REF_ce193e7b236563259d7e4395efa0e026.svg");
 }
 .cd-icons .cd-icon-8 {
-  background-image: url("icon-8.ef29f1a8.svg");
+  background-image: url("icon-8.HASH_REF_c2d5152879248434072ac495ef29f1a8.svg");
 }
 /* xForm section - basic style */
 .cd-form input[type=text],
@@ -1002,4 +1002,4 @@ section:nth-of-type(10) h2::before {
 .no-csstransitions .cd-select::after {
   display: none;
 }
-/*# sourceMappingURL=index.fd58574d.css.map */
+/*# sourceMappingURL=index.HASH_REF_0d8524a15cd50b7f068fb1cefd58574d.css.map */

@@ -355,7 +355,7 @@ input[type=checkbox] {
 .radio-label::after,
 .checkbox-label::after {
   left: 3px;
-  background: url("icon-check.e36d4d8a.svg") no-repeat center center;
+  background: url("1625f3debcb4c61ed337b26216f617d4") no-repeat center center;
   display: none;
 }
 .radio-label::before {
@@ -389,7 +389,7 @@ input[type=checkbox]:checked + label::after {
   display: block;
   width: 16px;
   height: 16px;
-  background: url("icon-select.f8d42744.svg") no-repeat center center;
+  background: url("2866f90e8eb6e36170f1e92fc3005b31") no-repeat center center;
   pointer-events: none;
 }
 select {
@@ -628,7 +628,7 @@ header nav {
   right: 0;
   height: 100%;
   width: 80px;
-  background-image: url("icon-download.43a1d2d2.svg");
+  background-image: url("9f8cdbb5f4d200419c667bee5ab8a343");
   background-position: center center;
   background-repeat: no-repeat;
   display: none;
@@ -958,28 +958,28 @@ section:nth-of-type(10) h2::before {
   margin: 1em;
 }
 .cd-icons .cd-icon-1 {
-  background-image: url("icon-1.f09de9b2.svg");
+  background-image: url("228a436e6eefbe483e207937e67d1e5f");
 }
 .cd-icons .cd-icon-2 {
-  background-image: url("icon-2.74505a7a.svg");
+  background-image: url("89ea0d20058de412523b56241115b77d");
 }
 .cd-icons .cd-icon-3 {
-  background-image: url("icon-3.bcc4af98.svg");
+  background-image: url("a4e3c031beb3e64e30831ee98aa859f1");
 }
 .cd-icons .cd-icon-4 {
-  background-image: url("icon-4.222e6830.svg");
+  background-image: url("581b4b9631b34af0042713871caba47e");
 }
 .cd-icons .cd-icon-5 {
-  background-image: url("icon-5.dd0f77d5.svg");
+  background-image: url("fbdfa50e396f2a58c53fd94a30903c76");
 }
 .cd-icons .cd-icon-6 {
-  background-image: url("icon-6.259c8c0a.svg");
+  background-image: url("fff7054476367b3ed2229575459a1996");
 }
 .cd-icons .cd-icon-7 {
-  background-image: url("icon-7.efa0e026.svg");
+  background-image: url("d334b8b7f2b209408575bbf8179c3293");
 }
 .cd-icons .cd-icon-8 {
-  background-image: url("icon-8.ef29f1a8.svg");
+  background-image: url("01027fa589d0183485ae2ee42c38ee53");
 }
 /* xForm section - basic style */
 .cd-form input[type=text],
@@ -1002,4 +1002,3 @@ section:nth-of-type(10) h2::before {
 .no-csstransitions .cd-select::after {
   display: none;
 }
-/*# sourceMappingURL=index.fd58574d.css.map */

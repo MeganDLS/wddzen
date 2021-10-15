@@ -1,0 +1,25 @@
+$link: purple;
+$visit: orange;
+$hover: gray;
+$active: blue;
+
+
+@mixin links($_link, $_visit, $_hover, $_active) {
+    color: $_link;
+
+    &:visited {
+        color: $_visit;
+    }
+
+    &:hover {
+        color: $_hover;
+    }
+
+    &:active {
+        color: $_active;
+    }
+}
+
+li a {
+    @include links(pink, yellow, lightblue, green);
+}
