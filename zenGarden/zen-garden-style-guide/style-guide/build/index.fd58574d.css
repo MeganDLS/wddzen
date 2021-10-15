@@ -50,10 +50,10 @@ li a {
   color: pink;
 }
 li a:visited {
-  color: lightblue;
+  color: yellow;
 }
 li a:hover {
-  color: yellow;
+  color: lightblue;
 }
 li a:active {
   color: green;
@@ -80,6 +80,10 @@ xPatterns
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   padding: 6px;
 }
+.cd-box .figure-caption {
+  padding: 15px;
+  font-size: 22px;
+}
 /* -------------------------------- 
 
 xNavigation 
@@ -90,7 +94,7 @@ header {
 }
 .cd-logo {
   /* logo box style */
-  background-color: #5f8ee4;
+  background-color: #000;
   width: 120px;
 }
 @media only screen and (min-width: 1024px) {
@@ -243,10 +247,10 @@ xButtons
   background: #759de8;
 }
 .btn.btn-success {
-  background: #6fce72;
+  background: #e4655f;
 }
 .no-touch .btn.btn-success:hover {
-  background: #82d485;
+  background: #e87a75;
 }
 .btn.btn-alert {
   background: #e4655f;
@@ -302,8 +306,8 @@ input[type=text] {
   box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
 }
 input[type=text].success {
-  border-color: #6fce72;
-  box-shadow: 0 0 6px rgba(111, 206, 114, 0.2);
+  border-color: #e4655f;
+  box-shadow: 0 0 6px rgba(228, 101, 95, 0.2);
 }
 input[type=text].alert {
   border-color: #e4655f;

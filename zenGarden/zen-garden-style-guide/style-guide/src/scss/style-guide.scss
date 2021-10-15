@@ -3,20 +3,8 @@
 @import 'partials/layout'; 
 @import 'partials/typography';
 @import 'partials/navigation';
+@import 'partials/colors';
 // responsive grid and media queries
-
-// color palette - these colors will be the color swatches of the Colors section
-
-$color-1: #5f8ee4; // Cornflower Blue - Action color
-$color-2: #19191a; // Dark Blue
-$color-3: #e4655f; // Red
-$color-4: #e6e6e6; // light grey
-$color-5: #ffffff; // white
-
-// additional colors
-
-$success: #6fce72; // green
-$alert: $color-3; // red
 
 // // fonts
 // $primary-font: 'Merriweather', serif;
@@ -46,6 +34,11 @@ xPatterns
   background: $color-5;
   box-shadow: 0 1px 1px rgba(#000, 0.05);
   padding: 6px;
+
+  .figure-caption {
+    padding: 15px;
+    font-size: 22px;
+  }
 }
 
 /* -------------------------------- 
@@ -60,7 +53,7 @@ header {
 
 .cd-logo {
   /* logo box style */
-  background-color: $color-1;
+  background-color: #000;
   width: 120px;
 
   @include MQ(M) {
@@ -237,10 +230,10 @@ xButtons
   }
 
   &.btn-success {
-    background: $success;
+    background: $alert;
 
     .no-touch &:hover {
-      background: lighten($success, 5%);
+      background: lighten($alert, 5%);
     }
   }
 
@@ -307,8 +300,8 @@ input[type='text'] {
   box-shadow: inset 1px 1px rgba(#000, 0.03);
 
   &.success {
-    border-color: $success;
-    box-shadow: 0 0 6px rgba($success, 0.2);
+    border-color: $alert;
+    box-shadow: 0 0 6px rgba($alert, 0.2);
   }
 
   &.alert {
