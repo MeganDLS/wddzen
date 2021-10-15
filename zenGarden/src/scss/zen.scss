@@ -24,8 +24,29 @@ $color-4: #E93A37;
 $color-5: #273A86;
 $color-6: #FCD91F;
 
+// navigation/links
+$link: #273A86;
+$visit: #E93A37;
+$hover: #5E5E5E;
+$active:#FCD91F;
+
 @mixin padding() {
     padding: $block-padding;
+}
+
+@mixin linx($link, $visit, $hover, $active) {
+    a {
+        color: $link;
+        &:visited {
+            color: $visit;
+        }
+        &:hover {
+            color: $hover;
+        }
+        &:active {
+            color: $active;
+        }
+    }
 }
 
 * {
@@ -156,4 +177,7 @@ html {
         flex-direction: column;
         background-color: $color-2;
     }
+
+
+
 }
