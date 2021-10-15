@@ -46,6 +46,62 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/* -------------------------------- 
+
+xTypography 
+
+-------------------------------- */
+h1,
+h2 {
+  font-family: "Poppins", Helvetica, sans-serif;
+  color: #19191a;
+}
+h1 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.4em;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+    margin: 1em 0 1.4em;
+  }
+}
+section > h2::before {
+  /* number before each section title */
+  color: silver;
+}
+p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #58585b;
+}
+p a {
+  color: #5f8ee4;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+}
 li a {
   color: pink;
 }
@@ -57,32 +113,6 @@ li a:hover {
 }
 li a:active {
   color: green;
-}
-/* -------------------------------- 
-
-xBackground 
-
--------------------------------- */
-body {
-  /* this is the page background */
-  background-color: #ffffff;
-}
-/* -------------------------------- 
-
-xPatterns
-
--------------------------------- */
-.cd-box {
-  /* this is the container of various design elements - i.e. the 2 logo of the branding section */
-  border: 1px solid #e6e6e6;
-  border-radius: 3px;
-  background: #ffffff;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  padding: 6px;
-}
-.cd-box .figure-caption {
-  padding: 15px;
-  font-size: 22px;
 }
 /* -------------------------------- 
 
@@ -156,73 +186,46 @@ header {
 }
 /* -------------------------------- 
 
-xPage title 
+xBackground 
 
 -------------------------------- */
-main > h1 {
-  color: #19191a;
-}
-@media only screen and (min-width: 1600px) {
-  main > h1 {
-    /* title goes into the header on big devices */
-    color: #ffffff;
-  }
+body {
+  /* this is the page background */
+  background-color: #ffffff;
 }
 /* -------------------------------- 
 
-xTypography 
+xPatterns
 
 -------------------------------- */
-h1,
-h2 {
-  font-family: "Poppins", Helvetica, sans-serif;
-  color: #19191a;
+.cd-box {
+  /* this is the container of various design elements - i.e. the 2 logo of the branding section */
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  background: #ffffff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 6px;
 }
-h1 {
-  font-size: 2.4rem;
-  font-weight: 300;
-  line-height: 1.2;
-  margin: 0 0 0.4em;
+.cd-box .figure-caption {
+  padding: 15px;
+  font-size: 22px;
 }
-@media only screen and (min-width: 768px) {
-  h1 {
-    font-size: 3.2rem;
-  }
+/* -------------------------------- 
+
+xPatterns
+
+-------------------------------- */
+.cd-box {
+  /* this is the container of various design elements - i.e. the 2 logo of the branding section */
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  background: #ffffff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 6px;
 }
-@media only screen and (min-width: 1024px) {
-  h1 {
-    font-size: 4rem;
-  }
-}
-h2 {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 1em 0;
-}
-@media only screen and (min-width: 768px) {
-  h2 {
-    font-size: 1.8rem;
-    margin: 1em 0 1.4em;
-  }
-}
-section > h2::before {
-  /* number before each section title */
-  color: silver;
-}
-p {
-  font-size: 1.4rem;
-  line-height: 1.4;
-  color: #58585b;
-}
-p a {
-  color: #5f8ee4;
-  text-decoration: underline;
-}
-@media only screen and (min-width: 768px) {
-  p {
-    font-size: 1.6rem;
-    line-height: 1.6;
-  }
+.cd-box .figure-caption {
+  padding: 15px;
+  font-size: 22px;
 }
 /* -------------------------------- 
 
@@ -285,126 +288,6 @@ xIcons
   /* icons size */
   width: 32px;
   height: 32px;
-}
-/* -------------------------------- 
-
-xForm 
-
--------------------------------- */
-input[type=text],
-select {
-  border: 1px solid #e6e6e6;
-  border-radius: 0.25em;
-  background: #ffffff;
-}
-input[type=text]:focus,
-select:focus {
-  outline: none;
-}
-input[type=text] {
-  padding: 0.6em 1em;
-  box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
-}
-input[type=text].success {
-  border-color: #e4655f;
-  box-shadow: 0 0 6px rgba(228, 101, 95, 0.2);
-}
-input[type=text].alert {
-  border-color: #e4655f;
-  box-shadow: 0 0 6px rgba(228, 101, 95, 0.2);
-}
-input[type=text]:focus {
-  border-color: #5f8ee4;
-  box-shadow: 0 0 6px rgba(95, 142, 228, 0.2);
-}
-input[type=radio],
-input[type=checkbox] {
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  opacity: 0;
-}
-.radio-label,
-.checkbox-label {
-  padding-left: 24px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.radio-label::before, .radio-label::after,
-.checkbox-label::before,
-.checkbox-label::after {
-  /* custom radio and check boxes */
-  content: "";
-  display: block;
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.radio-label::before,
-.checkbox-label::before {
-  left: 0;
-  border: 1px solid #e6e6e6;
-  box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
-}
-.radio-label::after,
-.checkbox-label::after {
-  left: 3px;
-  background: url("icon-check.e36d4d8a.svg") no-repeat center center;
-  display: none;
-}
-.radio-label::before {
-  border-radius: 50%;
-}
-.checkbox-label::before {
-  border-radius: 3px;
-}
-input[type=radio]:checked + label::before,
-input[type=checkbox]:checked + label::before {
-  background-color: #19191a;
-  border: none;
-  box-shadow: none;
-}
-input[type=radio]:checked + label::after,
-input[type=checkbox]:checked + label::after {
-  display: block;
-}
-.cd-select::after {
-  /* switcher arrow for select element */
-  content: "";
-  position: absolute;
-  z-index: 1;
-  right: 14px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  display: block;
-  width: 16px;
-  height: 16px;
-  background: url("icon-select.f8d42744.svg") no-repeat center center;
-  pointer-events: none;
-}
-select {
-  position: relative;
-  padding: 0.6em 2em 0.6em 1em;
-  cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
 }
 /* -------------------------------- 
 
