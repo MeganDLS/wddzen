@@ -24,6 +24,9 @@ li a {
     @include links(#273A86, #FCD91F, #5E5E5E, white);
 }
 
+p a {
+  @include links(#5E5E5E, #FCD91F, #273A86, white);
+}
 /* -------------------------------- 
 
 xNavigation 
