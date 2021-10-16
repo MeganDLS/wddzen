@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Concert+One&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Concert+One&family=Poppins&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -102,17 +103,76 @@ p a {
     line-height: 1.6;
   }
 }
+/* -------------------------------- 
+
+xTypography 
+
+-------------------------------- */
+h1,
+h2 {
+  font-family: "Poppins", Helvetica, sans-serif;
+  color: #19191a;
+}
+h1 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.4em;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+    margin: 1em 0 1.4em;
+  }
+}
+section > h2::before {
+  /* number before each section title */
+  color: silver;
+}
+p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #58585b;
+}
+p a {
+  color: #5f8ee4;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+}
 li a {
-  color: pink;
+  color: #273A86;
+  font-family: "Concert One", Arial, sans-serif;
 }
 li a:visited {
-  color: yellow;
+  color: #FCD91F;
 }
 li a:hover {
-  color: lightblue;
+  color: #5E5E5E;
+  text-decoration: underline;
 }
 li a:active {
-  color: green;
+  color: white;
+  background-color: #5E5E5E;
 }
 /* -------------------------------- 
 

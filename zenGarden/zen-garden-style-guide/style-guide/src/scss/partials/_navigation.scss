@@ -1,13 +1,9 @@
 @import 'colors';
-
-$link: purple;
-$visit: orange;
-$hover: gray;
-$active: blue;
-
+@import 'typography';
 
 @mixin links($_link, $_visit, $_hover, $_active) {
     color: $_link;
+    font-family: $link-font;
 
     &:visited {
         color: $_visit;
@@ -15,15 +11,17 @@ $active: blue;
 
     &:hover {
         color: $_hover;
+        text-decoration: underline;
     }
 
     &:active {
         color: $_active;
+        background-color: #5E5E5E
     }
 }
 
 li a {
-    @include links(pink, yellow, lightblue, green);
+    @include links(#273A86, #FCD91F, #5E5E5E, white);
 }
 
 /* -------------------------------- 
