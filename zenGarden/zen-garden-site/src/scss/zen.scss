@@ -1,14 +1,14 @@
 ///*! For W5 Style Guide for Color Zen Garden */
 /* By Lewis, Megan, and Theran */
 
-@import url('https://fonts.googleapis.com/css2?family=Slabo+13px&family=Concert+One&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slabo+13px&family=Poppins&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
-@import 'partials/typography';
+// @import 'partials/typography';
 
 $sans-serif-font: 'Poppins',
 Helvetica,
 sans-serif;
-$serif-font: 'Slabo+13px',
+$serif-font: 'Slabo 13px',
 serif;
 $gap: 15px;
 $block-padding: 25px;
@@ -16,46 +16,72 @@ $block-padding: 25px;
 $color-0: #000000;
 $color-1: #5E5E5E; //doesn't work with black font
 $color-2: #bbbbbb;
-$color-3: #ffffff;
+$color-3: #fff;
 $color-4: #E93A37; //looks ugly with black font
 $color-5: #273A86; //doesn't work with black font
 $color-6: #FCD91F;
 
-// navigation/links
-$link: #273A86;
-$visit: #E93A37;
-$hover: #5E5E5E;
-$active:#FCD91F;
+// light navigation/links 
+$link-light: $color-3;
+$visit-light: $color-2;
+$hover-light: $color-6;
+$active-light:$color-5;
+
+// dark navigation/links 
+$link-dark: $color-0;
+$visit-dark: $color-1;
+$hover-light: $color-6;
+$active-light:$color-5;
+
 
 @mixin padding() {
     padding: $block-padding;
 }
 
-@mixin linx($link, $visit, $hover, $active) {
+@mixin linx-light($link-light, $visit-light, $hover-light, $active-light) {
     a {
-        color: $link;
+        color: $link-light;
 
         &:visited {
-            color: $visit;
+            color: $visit-light;
         }
 
         &:hover {
-            color: $hover;
+            color: $hover-light;
         }
 
         &:active {
-            color: $active;
+            color: $active-light;
+        }
+    }
+}
+@mixin linx-dark($link-dark, $visit-dark, $hover-dark, $active-dark) {
+    a {
+        color: $link-dark;
+
+        &:visited {
+            color: $visit-dark;
+        }
+
+        &:hover {
+            color: $hover-dark;
+        }
+
+        &:active {
+            color: $active-dark;
         }
     }
 }
 
 * {
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 html {
     background-color: $color-0;
     font-size: 1.4em;
+    font-family: $serif-font;
 }
 
 .page-wrapper {
@@ -81,12 +107,12 @@ html {
     }
 
     a {
-        color: #ffffff;
+        color: $color-3;
     }
 }
 
 .intro {
-    color: #000;
+    color: $color-0;
     display: flex;
     min-width: 25%;
     flex-direction: column;
@@ -118,6 +144,9 @@ html {
         display: flex;
         flex-direction: column;
         background-color: $color-2;
+        a {
+            color: $color-0;
+        }
     }
 
     .preamble {
@@ -147,7 +176,7 @@ html {
         background-color: $color-3;
 
         a {
-            color: #000000;
+            color: $color-0;
         }
     }
 
@@ -163,14 +192,14 @@ html {
         background-color: $color-3;
 
         a {
-            color: #000000;
+            color: $color-0;
         }
     }
 
     footer {
         @include padding();
         width: 100%;
-        background-color: #bbbbbb;
+        background-color: $color-3;
         display: flex;
         justify-content: space-evenly;
     }
