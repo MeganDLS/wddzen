@@ -13,6 +13,23 @@ serif;
 $gap: 15px;
 $block-padding: 25px;
 
+$color-1-1: #98d4ef;
+$color-1-2: #94b4b4;
+$color-1-2: #a198ee;
+
+$color-2-1: #a5a3c3;
+$color-2-2: #c278cf;
+$color-2-2: #d698e6;
+
+$color-3-1: #e3e698;
+$color-3-2: #e6c258;
+$color-3-2: #e69b98;
+
+$color-4-1: #98ed9a;
+$color-4-2: #bddf38;
+$color-4-2: #74da28;
+
+
 $color-0: #000000;
 $color-1: #5E5E5E; //doesn't work with black font
 $color-2: #bbbbbb;
@@ -23,52 +40,32 @@ $color-6: #FCD91F;
 
 // light navigation/links 
 $link-light: $color-3;
-$visit-light: $color-2;
-$hover-light: $color-6;
-$active-light:$color-5;
 
 // dark navigation/links 
 $link-dark: $color-0;
-$visit-dark: $color-1;
-$hover-light: $color-6;
-$active-light:$color-5;
 
 
 @mixin padding() {
     padding: $block-padding;
 }
 
-@mixin linx-light($link-light, $visit-light, $hover-light, $active-light) {
+@mixin linx($color) {
     a {
-        color: $link-light;
+        color: $color;
+        display: inline-block;
+        border-bottom: 2px solid $color;
+        padding: 0;
 
         &:visited {
-            color: $visit-light;
+            color: $color;
         }
 
         &:hover {
-            color: $hover-light;
+            color: $color;
         }
 
         &:active {
-            color: $active-light;
-        }
-    }
-}
-@mixin linx-dark($link-dark, $visit-dark, $hover-dark, $active-dark) {
-    a {
-        color: $link-dark;
-
-        &:visited {
-            color: $visit-dark;
-        }
-
-        &:hover {
-            color: $hover-dark;
-        }
-
-        &:active {
-            color: $active-dark;
+            color: $color;
         }
     }
 }
@@ -82,6 +79,14 @@ html {
     background-color: $color-0;
     font-size: 1.4em;
     font-family: $serif-font;
+}
+
+nav {
+    ul {
+        li {
+            @include linx($link-light);
+        }
+    }
 }
 
 .page-wrapper {
@@ -107,7 +112,7 @@ html {
     }
 
     a {
-        color: $color-3;
+        @include linx($link-light);
     }
 }
 
@@ -144,9 +149,7 @@ html {
         display: flex;
         flex-direction: column;
         background-color: $color-2;
-        a {
-            color: $color-0;
-        }
+        @include linx($link-dark);
     }
 
     .preamble {
@@ -174,10 +177,7 @@ html {
     .participation {
         @include padding();
         background-color: $color-3;
-
-        a {
-            color: $color-0;
-        }
+        @include linx($link-dark);
     }
 
     .benefits {
@@ -190,10 +190,7 @@ html {
         display: flex;
         flex-direction: column;
         background-color: $color-3;
-
-        a {
-            color: $color-0;
-        }
+        @include linx($link-dark);
     }
 
     footer {
@@ -202,6 +199,7 @@ html {
         background-color: $color-3;
         display: flex;
         justify-content: space-evenly;
+        @include linx($link-dark)
     }
 }
 
@@ -233,6 +231,11 @@ html {
         display: flex;
         flex-direction: column;
         background-color: $color-2;
+        ul {
+            li {
+                @include linx($link-dark);
+            }
+        }
     }
 
 
