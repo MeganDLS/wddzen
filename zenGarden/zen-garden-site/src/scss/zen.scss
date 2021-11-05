@@ -28,10 +28,8 @@ $color-4-1: #98ed9a;
 $color-4-2: #bddf38;
 $color-4-3: #74da28;
 
-
 $color-0: #000;
 $color-1: #fff;
-
 
 // light navigation/links 
 $link-light: $color-1;
@@ -81,6 +79,22 @@ $link-dark: $color-0;
     }
 }
 
+$S:     768px;   
+$M:     1100px;     
+$L:     1600px; 
+
+@mixin MQ($canvas) {
+    @if $canvas == S {
+     @media only screen and (min-width: $S) { @content; } 
+    }
+    @else if $canvas == M {
+     @media only screen and (min-width: $M) { @content; } 
+    }
+    @else if $canvas == L {
+     @media only screen and (min-width: $L) { @content; } 
+    }
+  }
+
 * {
     box-sizing: border-box;
     text-decoration: none;
@@ -107,7 +121,7 @@ abbr {
 
 .page-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: $gap;
     max-width: 100%;
     line-height: 1.5em;
@@ -130,18 +144,22 @@ abbr {
     a {
         @include linx($link-dark);
     }
+    @include MQ(M) {
+        flex-direction: row;
+    };
 }
 
 .intro {
     color: $color-0;
     display: flex;
     min-width: 25%;
+    width: 100%;
     flex-direction: column;
     gap: $gap;
 
     header {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: $gap;
 
         h1 {
@@ -159,6 +177,9 @@ abbr {
             font-size: 1.5em;
             flex-direction: column;
         }
+        @include MQ(M) {
+            flex-direction: column;
+        };
     }
 
     .summary {
@@ -182,7 +203,7 @@ abbr {
 .main {
     color: $color-0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-flow: wrap;
     gap: $gap;
 
