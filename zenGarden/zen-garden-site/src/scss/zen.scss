@@ -1,15 +1,13 @@
-///*! For W5 Style Guide for Color Zen Garden */
+/*! For W5 Style Guide for Color Zen Garden */
 /* By Lewis, Megan, and Theran */
 
 @import url('https://fonts.googleapis.com/css2?family=Slabo+13px&family=Poppins&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
 // @import 'partials/typography';
 
-$sans-serif-font: 'Poppins',
-Helvetica,
-sans-serif;
-$serif-font: 'Slabo 13px',
-serif;
+$sans-serif-font: 'Poppins', Helvetica, sans-serif;
+$serif-font: 'Slabo 13px', serif;
+
 $gap: 15px;
 $block-padding: 25px;
 
@@ -30,9 +28,9 @@ $color-4-2: #bddf38;
 $color-4-2: #74da28;
 
 
-$color-0: #000000;
+$color-0: #000;
 $color-1: #5E5E5E; //doesn't work with black font
-$color-2: #bbbbbb;
+$color-2: #bbb;
 $color-3: #fff;
 $color-4: #E93A37; //looks ugly with black font
 $color-5: #273A86; //doesn't work with black font
@@ -40,10 +38,8 @@ $color-6: #FCD91F;
 
 // light navigation/links 
 $link-light: $color-3;
-
 // dark navigation/links 
 $link-dark: $color-0;
-
 
 @mixin padding() {
     padding: $block-padding;
@@ -87,6 +83,11 @@ nav {
             @include linx($link-light);
         }
     }
+}
+
+abbr {
+    display: inline-block;
+    font-style: italic;
 }
 
 .page-wrapper {
@@ -237,7 +238,4 @@ nav {
             }
         }
     }
-
-
-
 }

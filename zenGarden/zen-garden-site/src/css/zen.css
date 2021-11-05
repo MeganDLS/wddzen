@@ -1,3 +1,4 @@
+/*! For W5 Style Guide for Color Zen Garden */
 /* By Lewis, Megan, and Theran */
 @import url("https://fonts.googleapis.com/css2?family=Slabo+13px&family=Poppins&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
@@ -7,7 +8,7 @@
 }
 
 html {
-  background-color: #000000;
+  background-color: #000;
   font-size: 1.4em;
   font-family: "Slabo 13px", serif;
 }
@@ -26,6 +27,11 @@ nav ul li a:hover {
 }
 nav ul li a:active {
   color: #fff;
+}
+
+abbr {
+  display: inline-block;
+  font-style: italic;
 }
 
 .page-wrapper {
@@ -64,7 +70,7 @@ nav ul li a:active {
 }
 
 .intro {
-  color: #000000;
+  color: #000;
   display: flex;
   min-width: 25%;
   flex-direction: column;
@@ -92,34 +98,34 @@ nav ul li a:active {
   padding: 25px;
   display: flex;
   flex-direction: column;
-  background-color: #bbbbbb;
+  background-color: #bbb;
 }
 .intro .summary a {
-  color: #000000;
+  color: #000;
   display: inline-block;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #000;
   padding: 0;
 }
 .intro .summary a:visited {
-  color: #000000;
+  color: #000;
 }
 .intro .summary a:hover {
-  color: #000000;
+  color: #000;
 }
 .intro .summary a:active {
-  color: #000000;
+  color: #000;
 }
 .intro .preamble {
   padding: 25px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  background-color: #000000;
+  background-color: #000;
   color: #fff;
 }
 
 .main {
-  color: #000000;
+  color: #000;
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
@@ -134,19 +140,19 @@ nav ul li a:active {
   background-color: #fff;
 }
 .main .participation a {
-  color: #000000;
+  color: #000;
   display: inline-block;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #000;
   padding: 0;
 }
 .main .participation a:visited {
-  color: #000000;
+  color: #000;
 }
 .main .participation a:hover {
-  color: #000000;
+  color: #000;
 }
 .main .participation a:active {
-  color: #000000;
+  color: #000;
 }
 .main .benefits {
   padding: 25px;
@@ -159,19 +165,19 @@ nav ul li a:active {
   background-color: #fff;
 }
 .main .requirements a {
-  color: #000000;
+  color: #000;
   display: inline-block;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #000;
   padding: 0;
 }
 .main .requirements a:visited {
-  color: #000000;
+  color: #000;
 }
 .main .requirements a:hover {
-  color: #000000;
+  color: #000;
 }
 .main .requirements a:active {
-  color: #000000;
+  color: #000;
 }
 .main footer {
   padding: 25px;
@@ -181,19 +187,19 @@ nav ul li a:active {
   justify-content: space-evenly;
 }
 .main footer a {
-  color: #000000;
+  color: #000;
   display: inline-block;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #000;
   padding: 0;
 }
 .main footer a:visited {
-  color: #000000;
+  color: #000;
 }
 .main footer a:hover {
-  color: #000000;
+  color: #000;
 }
 .main footer a:active {
-  color: #000000;
+  color: #000;
 }
 
 .sidebar .wrapper {
@@ -206,7 +212,7 @@ nav ul li a:active {
   padding: 25px;
   display: flex;
   flex-direction: column;
-  background-color: #000000;
+  background-color: #000;
   color: #fff;
 }
 .sidebar .wrapper .design-archives {
@@ -221,22 +227,22 @@ nav ul li a:active {
   padding: 25px;
   display: flex;
   flex-direction: column;
-  background-color: #bbbbbb;
+  background-color: #bbb;
 }
 .sidebar .wrapper .zen-resources ul li a {
-  color: #000000;
+  color: #000;
   display: inline-block;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #000;
   padding: 0;
 }
 .sidebar .wrapper .zen-resources ul li a:visited {
-  color: #000000;
+  color: #000;
 }
 .sidebar .wrapper .zen-resources ul li a:hover {
-  color: #000000;
+  color: #000;
 }
 .sidebar .wrapper .zen-resources ul li a:active {
-  color: #000000;
+  color: #000;
 }
 
 /*# sourceMappingURL=zen.css.map */
