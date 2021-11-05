@@ -6,41 +6,35 @@
 // @import 'partials/typography';
 
 
-$sans-serif-font: 'Poppins',
-Helvetica,
-sans-serif;
-$serif-font: 'Slabo 13px',
-serif;
+$sans-serif-font: 'Poppins', Helvetica, sans-serif;
+$serif-font: 'Slabo 13px', serif;
 $gap: 15px;
 $block-padding: 25px;
+$multiple: 2.2;
 
 $color-1-1: #98d4ef;
 $color-1-2: #94b4b4;
-$color-1-2: #a198ee;
+$color-1-3: #a198ee;
 
 $color-2-1: #a5a3c3;
 $color-2-2: #c278cf;
-$color-2-2: #d698e6;
+$color-2-3: #d698e6;
 
 $color-3-1: #e3e698;
 $color-3-2: #e6c258;
-$color-3-2: #e69b98;
+$color-3-3: #e69b98;
 
 $color-4-1: #98ed9a;
 $color-4-2: #bddf38;
-$color-4-2: #74da28;
+$color-4-3: #74da28;
 
 
 $color-0: #000;
-$color-1: #5E5E5E; //doesn't work with black font
-$color-2: #bbb;
-$color-3: #fff;
-$color-4: #E93A37; //looks ugly with black font
-$color-5: #273A86; //doesn't work with black font
-$color-6: #FCD91F;
+$color-1: #fff;
+
 
 // light navigation/links 
-$link-light: $color-3;
+$link-light: $color-1;
 // dark navigation/links 
 $link-dark: $color-0;
 
@@ -69,16 +63,20 @@ $link-dark: $color-0;
     }
 }
 
-@mixin colorChange($name, $color1, $color2) {
-    animation: $name 1s infinite alternate;
+@mixin colorChange($name, $randNum, $color1, $color2, $color3) {
+    animation: $name $randNum+s infinite alternate;
 
     @keyframes #{$name} {
-        from {
+        0% {
             background-color: $color1;
         }
 
-        to {
+        50% {
             background-color: $color2;
+        }
+
+        100% {
+            background-color: $color3;
         }
     }
 }
@@ -97,7 +95,7 @@ html {
 nav {
     ul {
         li {
-            @include linx($link-light);
+            @include linx($link-dark);
         }
     }
 }
@@ -130,7 +128,7 @@ abbr {
     }
 
     a {
-        @include linx($link-light);
+        @include linx($link-dark);
     }
 }
 
@@ -148,39 +146,36 @@ abbr {
 
         h1 {
             @include padding();
-            @include colorChange(heading,$color-1-1 ,$color-1-2 );
             display: flex;
             font-size: 3.2em;
-            background-color: $color-4;
+            background-color: $color-0;
+            color: $color-1;
         }
 
         h2 {
             @include padding();
-            @include colorChange(subheading, $color-2-1, $color-2-2);
+            @include colorChange(subheading, random($limit: 5)*$multiple, $color-2-1, $color-2-2, $color-2-3);
             display: flex;
             font-size: 1.5em;
             flex-direction: column;
-            background-color: $color-3;
         }
     }
 
     .summary {
         @include padding();
         @include linx($link-dark);
-        @include colorChange(summary,$color-3-1 ,$color-3-2);
+        @include colorChange(summary, random($limit: 5)*$multiple, $color-3-1 ,$color-3-2, $color-3-3);
         display: flex;
         flex-direction: column;
-        background-color: $color-2;
     }
 
     .preamble {
         @include padding();
-        @include colorChange(preamble, $color-4-1, $color-4-2);
+        @include colorChange(preamble, random($limit: 5)*$multiple, $color-4-1, $color-4-2, $color-4-3);
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        background-color: $color-0;
-        color: $color-3;
+        color: $color-0;
     }
 }
 
@@ -193,39 +188,39 @@ abbr {
 
     .explanation {
         @include padding();
-        @include colorChange(explanation, $color-1-1, $color-1-2);
-        background-color: $color-3;
+        @include colorChange(explanation, random($limit: 5)*$multiple, $color-1-1, $color-1-2, $color-1-3);
     }
 
     .participation {
         @include padding();
-        @include colorChange(participation, $color-2-1, $color-2-2);
-        background-color: $color-3;
+        @include colorChange(participation, random($limit: 5)*$multiple, $color-2-1, $color-2-2, $color-2-3);
         @include linx($link-dark);
     }
 
     .benefits {
         @include padding();
-        @include colorChange(benefits, $color-3-1, $color-3-2);
-        background-color: $color-6;
+        @include colorChange(explanation, random($limit: 5)*$multiple, $color-1-1, $color-1-2, $color-1-3);
     }
 
     .requirements {
         @include padding();
-        @include colorChange(requirements, $color-4-1, $color-4-2);
+        @include colorChange(requirements, random($limit: 5)*$multiple, $color-4-1, $color-4-2, $color-4-3);
         display: flex;
         flex-direction: column;
-        background-color: $color-3;
         @include linx($link-dark);
     }
 
     footer {
         @include padding();
         width: 100%;
-        background-color: $color-3;
+        background-color: $color-0;
         display: flex;
         justify-content: space-evenly;
-        @include linx($link-dark)
+
+        a {
+            color: $color-1;
+            font-weight: 500;
+        }
     }
 }
 
@@ -236,30 +231,27 @@ abbr {
     gap: $gap;
 
     .design-selection {
-        @include colorChange(design-selection, $color-1-1, $color-1-2);
+        @include colorChange(design-selection, random($limit: 5)*$multiple, $color-1-1, $color-1-2, $color-1-3);
         @include padding();
         display: flex;
         flex-direction: column;
-        background-color: $color-0;
-        color: $color-3;
+        color: $color-0;
     }
 
     .design-archives {
-        @include colorChange(design-archives, $color-2-1, $color-2-2);
+        @include colorChange(summary, random($limit: 5)*$multiple, $color-3-1 ,$color-3-2, $color-3-3);
         @include padding();
         display: flex;
         flex-direction: column;
-        color: $color-3;
-        background-color: $color-5;
+        color: $color-0;
         height: 200px;
     }
 
     .zen-resources {
-        @include colorChange(zen-resources, $color-3-1, $color-3-2);
+        @include colorChange(zen-resources, random($limit: 5)*$multiple, $color-3-1, $color-3-2, $color-3-3);
         @include padding();
         display: flex;
         flex-direction: column;
-        background-color: $color-2;
         ul {
             li {
                 @include linx($link-dark);

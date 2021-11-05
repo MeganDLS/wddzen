@@ -14,19 +14,19 @@ html {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #000;
   display: inline-block;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #000;
   padding: 0;
 }
 nav ul li a:visited {
-  color: #fff;
+  color: #000;
 }
 nav ul li a:hover {
-  color: #fff;
+  color: #000;
 }
 nav ul li a:active {
-  color: #fff;
+  color: #000;
 }
 
 abbr {
@@ -54,19 +54,19 @@ abbr {
   font-family: "Poppins", Helvetica, sans-serif;
 }
 .page-wrapper a a {
-  color: #fff;
+  color: #000;
   display: inline-block;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #000;
   padding: 0;
 }
 .page-wrapper a a:visited {
-  color: #fff;
+  color: #000;
 }
 .page-wrapper a a:hover {
-  color: #fff;
+  color: #000;
 }
 .page-wrapper a a:active {
-  color: #fff;
+  color: #000;
 }
 
 .intro {
@@ -83,41 +83,34 @@ abbr {
 }
 .intro header h1 {
   padding: 25px;
-  animation: heading 1s infinite alternate;
   display: flex;
   font-size: 3.2em;
-  background-color: #E93A37;
-}
-@keyframes heading {
-  from {
-    background-color: #98d4ef;
-  }
-  to {
-    background-color: #a198ee;
-  }
+  background-color: #000;
+  color: #fff;
 }
 .intro header h2 {
   padding: 25px;
-  animation: subheading 1s infinite alternate;
+  animation: subheading 2.2s infinite alternate;
   display: flex;
   font-size: 1.5em;
   flex-direction: column;
-  background-color: #fff;
 }
 @keyframes subheading {
-  from {
+  0% {
     background-color: #a5a3c3;
   }
-  to {
+  50% {
+    background-color: #c278cf;
+  }
+  100% {
     background-color: #d698e6;
   }
 }
 .intro .summary {
   padding: 25px;
-  animation: summary 1s infinite alternate;
+  animation: summary 6.6s infinite alternate;
   display: flex;
   flex-direction: column;
-  background-color: #bbb;
 }
 .intro .summary a {
   color: #000;
@@ -135,27 +128,32 @@ abbr {
   color: #000;
 }
 @keyframes summary {
-  from {
+  0% {
     background-color: #e3e698;
   }
-  to {
+  50% {
+    background-color: #e6c258;
+  }
+  100% {
     background-color: #e69b98;
   }
 }
 .intro .preamble {
   padding: 25px;
-  animation: preamble 1s infinite alternate;
+  animation: preamble 4.4s infinite alternate;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  background-color: #000;
-  color: #fff;
+  color: #000;
 }
 @keyframes preamble {
-  from {
+  0% {
     background-color: #98ed9a;
   }
-  to {
+  50% {
+    background-color: #bddf38;
+  }
+  100% {
     background-color: #74da28;
   }
 }
@@ -169,27 +167,31 @@ abbr {
 }
 .main .explanation {
   padding: 25px;
-  animation: explanation 1s infinite alternate;
-  background-color: #fff;
+  animation: explanation 11s infinite alternate;
 }
 @keyframes explanation {
-  from {
+  0% {
     background-color: #98d4ef;
   }
-  to {
+  50% {
+    background-color: #94b4b4;
+  }
+  100% {
     background-color: #a198ee;
   }
 }
 .main .participation {
   padding: 25px;
-  animation: participation 1s infinite alternate;
-  background-color: #fff;
+  animation: participation 2.2s infinite alternate;
 }
 @keyframes participation {
-  from {
+  0% {
     background-color: #a5a3c3;
   }
-  to {
+  50% {
+    background-color: #c278cf;
+  }
+  100% {
     background-color: #d698e6;
   }
 }
@@ -210,29 +212,33 @@ abbr {
 }
 .main .benefits {
   padding: 25px;
-  animation: benefits 1s infinite alternate;
-  background-color: #FCD91F;
+  animation: explanation 11s infinite alternate;
 }
-@keyframes benefits {
-  from {
-    background-color: #e3e698;
+@keyframes explanation {
+  0% {
+    background-color: #98d4ef;
   }
-  to {
-    background-color: #e69b98;
+  50% {
+    background-color: #94b4b4;
+  }
+  100% {
+    background-color: #a198ee;
   }
 }
 .main .requirements {
   padding: 25px;
-  animation: requirements 1s infinite alternate;
+  animation: requirements 4.4s infinite alternate;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
 }
 @keyframes requirements {
-  from {
+  0% {
     background-color: #98ed9a;
   }
-  to {
+  50% {
+    background-color: #bddf38;
+  }
+  100% {
     background-color: #74da28;
   }
 }
@@ -254,24 +260,13 @@ abbr {
 .main footer {
   padding: 25px;
   width: 100%;
-  background-color: #fff;
+  background-color: #000;
   display: flex;
   justify-content: space-evenly;
 }
 .main footer a {
-  color: #000;
-  display: inline-block;
-  border-bottom: 2px solid #000;
-  padding: 0;
-}
-.main footer a:visited {
-  color: #000;
-}
-.main footer a:hover {
-  color: #000;
-}
-.main footer a:active {
-  color: #000;
+  color: #fff;
+  font-weight: 500;
 }
 
 .sidebar .wrapper {
@@ -281,50 +276,56 @@ abbr {
   gap: 15px;
 }
 .sidebar .wrapper .design-selection {
-  animation: design-selection 1s infinite alternate;
+  animation: design-selection 6.6s infinite alternate;
   padding: 25px;
   display: flex;
   flex-direction: column;
-  background-color: #000;
-  color: #fff;
+  color: #000;
 }
 @keyframes design-selection {
-  from {
+  0% {
     background-color: #98d4ef;
   }
-  to {
+  50% {
+    background-color: #94b4b4;
+  }
+  100% {
     background-color: #a198ee;
   }
 }
 .sidebar .wrapper .design-archives {
-  animation: design-archives 1s infinite alternate;
+  animation: summary 6.6s infinite alternate;
   padding: 25px;
   display: flex;
   flex-direction: column;
-  color: #fff;
-  background-color: #273A86;
+  color: #000;
   height: 200px;
 }
-@keyframes design-archives {
-  from {
-    background-color: #a5a3c3;
+@keyframes summary {
+  0% {
+    background-color: #e3e698;
   }
-  to {
-    background-color: #d698e6;
+  50% {
+    background-color: #e6c258;
+  }
+  100% {
+    background-color: #e69b98;
   }
 }
 .sidebar .wrapper .zen-resources {
-  animation: zen-resources 1s infinite alternate;
+  animation: zen-resources 6.6s infinite alternate;
   padding: 25px;
   display: flex;
   flex-direction: column;
-  background-color: #bbb;
 }
 @keyframes zen-resources {
-  from {
+  0% {
     background-color: #e3e698;
   }
-  to {
+  50% {
+    background-color: #e6c258;
+  }
+  100% {
     background-color: #e69b98;
   }
 }
