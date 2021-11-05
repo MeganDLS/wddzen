@@ -5,9 +5,12 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
 // @import 'partials/typography';
 
-$sans-serif-font: 'Poppins', Helvetica, sans-serif;
-$serif-font: 'Slabo 13px', serif;
 
+$sans-serif-font: 'Poppins',
+Helvetica,
+sans-serif;
+$serif-font: 'Slabo 13px',
+serif;
 $gap: 15px;
 $block-padding: 25px;
 
@@ -62,6 +65,20 @@ $link-dark: $color-0;
 
         &:active {
             color: $color;
+        }
+    }
+}
+
+@mixin colorChange($name, $color1, $color2) {
+    animation: $name 1s infinite alternate;
+
+    @keyframes #{$name} {
+        from {
+            background-color: $color1;
+        }
+
+        to {
+            background-color: $color2;
         }
     }
 }
@@ -131,6 +148,7 @@ abbr {
 
         h1 {
             @include padding();
+            @include colorChange(heading,$color-1-1 ,$color-1-2 );
             display: flex;
             font-size: 3.2em;
             background-color: $color-4;
@@ -138,6 +156,7 @@ abbr {
 
         h2 {
             @include padding();
+            @include colorChange(subheading, $color-2-1, $color-2-2);
             display: flex;
             font-size: 1.5em;
             flex-direction: column;
@@ -147,14 +166,16 @@ abbr {
 
     .summary {
         @include padding();
+        @include linx($link-dark);
+        @include colorChange(summary,$color-3-1 ,$color-3-2);
         display: flex;
         flex-direction: column;
         background-color: $color-2;
-        @include linx($link-dark);
     }
 
     .preamble {
         @include padding();
+        @include colorChange(preamble, $color-4-1, $color-4-2);
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -172,22 +193,26 @@ abbr {
 
     .explanation {
         @include padding();
+        @include colorChange(explanation, $color-1-1, $color-1-2);
         background-color: $color-3;
     }
 
     .participation {
         @include padding();
+        @include colorChange(participation, $color-2-1, $color-2-2);
         background-color: $color-3;
         @include linx($link-dark);
     }
 
     .benefits {
         @include padding();
+        @include colorChange(benefits, $color-3-1, $color-3-2);
         background-color: $color-6;
     }
 
     .requirements {
         @include padding();
+        @include colorChange(requirements, $color-4-1, $color-4-2);
         display: flex;
         flex-direction: column;
         background-color: $color-3;
@@ -211,6 +236,7 @@ abbr {
     gap: $gap;
 
     .design-selection {
+        @include colorChange(design-selection, $color-1-1, $color-1-2);
         @include padding();
         display: flex;
         flex-direction: column;
@@ -219,6 +245,7 @@ abbr {
     }
 
     .design-archives {
+        @include colorChange(design-archives, $color-2-1, $color-2-2);
         @include padding();
         display: flex;
         flex-direction: column;
@@ -228,6 +255,7 @@ abbr {
     }
 
     .zen-resources {
+        @include colorChange(zen-resources, $color-3-1, $color-3-2);
         @include padding();
         display: flex;
         flex-direction: column;
