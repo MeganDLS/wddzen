@@ -1,85 +1,13 @@
-/*! For W5 Style Guide for Color Zen Garden */
+/*! Color Zen Garden */
 /* By Lewis, Megan, and Theran */
 
 @import url('https://fonts.googleapis.com/css2?family=Slabo+13px&family=Poppins&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
-// @import 'partials/typography';
 
-
-$sans-serif-font: 'Poppins', Helvetica, sans-serif;
-$serif-font: 'Slabo 13px', serif;
-$gap: 15px;
-$block-padding: 25px;
-$multiple: 2.2;
-
-$color-1-1: #98d4ef;
-$color-1-2: #94b4b4;
-$color-1-3: #a198ee;
-
-$color-2-1: #a5a3c3;
-$color-2-2: #c278cf;
-$color-2-3: #d698e6;
-
-$color-3-1: #e3e698;
-$color-3-2: #e6c258;
-$color-3-3: #e69b98;
-
-$color-4-1: #98ed9a;
-$color-4-2: #bddf38;
-$color-4-3: #74da28;
-
-
-$color-0: #000;
-$color-1: #fff;
-
-
-// light navigation/links 
-$link-light: $color-1;
-// dark navigation/links 
-$link-dark: $color-0;
-
-@mixin padding() {
-    padding: $block-padding;
-}
-
-@mixin linx($color) {
-    a {
-        color: $color;
-        display: inline-block;
-        border-bottom: 2px solid $color;
-        padding: 0;
-
-        &:visited {
-            color: $color;
-        }
-
-        &:hover {
-            color: $color;
-        }
-
-        &:active {
-            color: $color;
-        }
-    }
-}
-
-@mixin colorChange($name, $randNum, $color1, $color2, $color3) {
-    animation: $name $randNum+s infinite alternate;
-
-    @keyframes #{$name} {
-        0% {
-            background-color: $color1;
-        }
-
-        50% {
-            background-color: $color2;
-        }
-
-        100% {
-            background-color: $color3;
-        }
-    }
-}
+@import 'partials/typography'; 
+@import 'partials/colors';
+@import 'partials/variables'; 
+@import 'partials/mixins';
 
 * {
     box-sizing: border-box;

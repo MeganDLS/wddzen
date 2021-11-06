@@ -1,0 +1,44 @@
+@import 'colors';
+
+@mixin padding() {
+    padding: $block-padding;
+}
+
+@mixin linx($color) {
+    a {
+        color: $color;
+        display: inline-block;
+        border-bottom: 2px solid $color;
+        padding: 0;
+
+        &:visited {
+            color: $color;
+        }
+
+        &:hover {
+            color: $color;
+        }
+
+        &:active {
+            color: $color;
+        }
+    }
+}
+
+@mixin colorChange($name, $randNum, $color1, $color2, $color3) {
+    animation: $name $randNum+s infinite alternate;
+
+    @keyframes #{$name} {
+        0% {
+            background-color: $color1;
+        }
+
+        50% {
+            background-color: $color2;
+        }
+
+        100% {
+            background-color: $color3;
+        }
+    }
+}

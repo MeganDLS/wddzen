@@ -1,4 +1,4 @@
-/*! For W5 Style Guide for Color Zen Garden */
+/*! Color Zen Garden */
 /* By Lewis, Megan, and Theran */
 @import url("https://fonts.googleapis.com/css2?family=Slabo+13px&family=Poppins&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
@@ -90,7 +90,7 @@ abbr {
 }
 .intro header h2 {
   padding: 25px;
-  animation: subheading 2.2s infinite alternate;
+  animation: subheading 11s infinite alternate;
   display: flex;
   font-size: 1.5em;
   flex-direction: column;
@@ -108,7 +108,7 @@ abbr {
 }
 .intro .summary {
   padding: 25px;
-  animation: summary 6.6s infinite alternate;
+  animation: summary 8.8s infinite alternate;
   display: flex;
   flex-direction: column;
 }
@@ -167,7 +167,7 @@ abbr {
 }
 .main .explanation {
   padding: 25px;
-  animation: explanation 11s infinite alternate;
+  animation: explanation 4.4s infinite alternate;
 }
 @keyframes explanation {
   0% {
@@ -182,7 +182,7 @@ abbr {
 }
 .main .participation {
   padding: 25px;
-  animation: participation 4.4s infinite alternate;
+  animation: participation 11s infinite alternate;
 }
 @keyframes participation {
   0% {
@@ -212,7 +212,7 @@ abbr {
 }
 .main .benefits {
   padding: 25px;
-  animation: explanation 6.6s infinite alternate;
+  animation: explanation 2.2s infinite alternate;
 }
 @keyframes explanation {
   0% {
@@ -227,7 +227,7 @@ abbr {
 }
 .main .requirements {
   padding: 25px;
-  animation: requirements 4.4s infinite alternate;
+  animation: requirements 2.2s infinite alternate;
   display: flex;
   flex-direction: column;
 }
@@ -294,7 +294,7 @@ abbr {
   }
 }
 .sidebar .wrapper .design-archives {
-  animation: summary 11s infinite alternate;
+  animation: summary 2.2s infinite alternate;
   padding: 25px;
   display: flex;
   flex-direction: column;
@@ -313,7 +313,7 @@ abbr {
   }
 }
 .sidebar .wrapper .zen-resources {
-  animation: zen-resources 8.8s infinite alternate;
+  animation: zen-resources 2.2s infinite alternate;
   padding: 25px;
   display: flex;
   flex-direction: column;
