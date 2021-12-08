@@ -9,22 +9,6 @@
 @import 'partials/variables'; 
 @import 'partials/mixins';
 
-$S:     768px;   
-$M:     1100px;     
-$L:     1600px; 
-
-@mixin MQ($canvas) {
-    @if $canvas == S {
-     @media only screen and (min-width: $S) { @content; } 
-    }
-    @else if $canvas == M {
-     @media only screen and (min-width: $M) { @content; } 
-    }
-    @else if $canvas == L {
-     @media only screen and (min-width: $L) { @content; } 
-    }
-  }
-
 * {
     box-sizing: border-box;
     text-decoration: none;
@@ -196,6 +180,9 @@ abbr {
         flex-direction: column;
         color: $color-0;
         height: 200px;
+        
+        border: 2px solid $color-0;
+        border-radius: 0 1em;
     }
 
     .zen-resources {

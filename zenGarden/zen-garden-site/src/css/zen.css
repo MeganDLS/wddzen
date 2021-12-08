@@ -178,7 +178,7 @@ abbr {
 }
 .main .explanation {
   padding: 25px;
-  animation: explanation 11s infinite alternate;
+  animation: explanation 4.4s infinite alternate;
 }
 @keyframes explanation {
   0% {
@@ -305,7 +305,7 @@ abbr {
   }
 }
 .sidebar .wrapper .design-archives {
-  animation: summary 11s infinite alternate;
+  animation: summary 2.2s infinite alternate;
   padding: 25px;
   display: flex;
   flex-direction: column;
