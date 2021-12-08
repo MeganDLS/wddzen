@@ -34,6 +34,23 @@ abbr {
   font-style: italic;
 }
 
+body {
+  background: linear-gradient(-45deg, #000, #555, #000, #555, #000, #555, #000, #98d4ef);
+  background-size: 400% 400%;
+  animation: gradient 45s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .page-wrapper {
   display: flex;
   flex-direction: column;
@@ -96,7 +113,7 @@ abbr {
 }
 .intro header h2 {
   padding: 25px;
-  animation: subheading 6.6s infinite alternate;
+  animation: subheading 4.4s infinite alternate;
   display: flex;
   font-size: 1.5em;
   flex-direction: column;
@@ -119,9 +136,10 @@ abbr {
 }
 .intro .summary {
   padding: 25px;
-  animation: summary 4.4s infinite alternate;
+  animation: summary 11s infinite alternate;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .intro .summary a {
   color: #000;
@@ -151,7 +169,7 @@ abbr {
 }
 .intro .preamble {
   padding: 25px;
-  animation: preamble 2.2s infinite alternate;
+  animation: preamble 8.8s infinite alternate;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -193,7 +211,7 @@ abbr {
 }
 .main .participation {
   padding: 25px;
-  animation: participation 6.6s infinite alternate;
+  animation: participation 4.4s infinite alternate;
 }
 @keyframes participation {
   0% {
@@ -223,7 +241,7 @@ abbr {
 }
 .main .benefits {
   padding: 25px;
-  animation: explanation 2.2s infinite alternate;
+  animation: explanation 11s infinite alternate;
 }
 @keyframes explanation {
   0% {
@@ -238,7 +256,7 @@ abbr {
 }
 .main .requirements {
   padding: 25px;
-  animation: requirements 2.2s infinite alternate;
+  animation: requirements 8.8s infinite alternate;
   display: flex;
   flex-direction: column;
 }
@@ -305,7 +323,7 @@ abbr {
   }
 }
 .sidebar .wrapper .design-archives {
-  animation: summary 2.2s infinite alternate;
+  animation: summary 4.4s infinite alternate;
   padding: 25px;
   display: flex;
   flex-direction: column;
@@ -324,7 +342,7 @@ abbr {
   }
 }
 .sidebar .wrapper .zen-resources {
-  animation: zen-resources 8.8s infinite alternate;
+  animation: zen-resources 6.6s infinite alternate;
   padding: 25px;
   display: flex;
   flex-direction: column;
@@ -354,6 +372,34 @@ abbr {
 }
 .sidebar .wrapper .zen-resources ul li a:active {
   color: #000;
+}
+
+.block:before, .block:after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.block:after {
+  filter: blur(50px);
 }
 
 /*# sourceMappingURL=zen.css.map */

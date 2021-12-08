@@ -33,6 +33,24 @@ abbr {
     font-style: italic;
 }
 
+body {
+    background: linear-gradient(-45deg, #000, #555, #000, #555, #000, #555, #000, #98d4ef);
+    background-size: 400% 400%;
+    animation: gradient 45s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .page-wrapper {
     display: flex;
     flex-direction: column;
@@ -102,6 +120,7 @@ abbr {
         @include colorChange(summary, random($limit: 5)*$multiple, $color-3-1 ,$color-3-2, $color-3-3);
         display: flex;
         flex-direction: column;
+        position: relative;
     }
 
     .preamble {
@@ -181,8 +200,8 @@ abbr {
         color: $color-0;
         height: 200px;
         
-        border: 2px solid $color-0;
-        border-radius: 0 1em;
+        // border: 2px solid $color-0;
+        // border-radius: 0 1em;
     }
 
     .zen-resources {
@@ -197,3 +216,33 @@ abbr {
         }
     }
 }
+
+.block:before, .block:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+      #0000ff, #00ff00,#ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+  }
+  
+  @keyframes steam {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .block:after {
+    filter: blur(50px);
+  }
