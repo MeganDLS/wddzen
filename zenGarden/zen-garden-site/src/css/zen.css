@@ -96,7 +96,7 @@ abbr {
 }
 .intro header h2 {
   padding: 25px;
-  animation: subheading 11s infinite alternate;
+  animation: subheading 6.6s infinite alternate;
   display: flex;
   font-size: 1.5em;
   flex-direction: column;
@@ -119,7 +119,7 @@ abbr {
 }
 .intro .summary {
   padding: 25px;
-  animation: summary 2.2s infinite alternate;
+  animation: summary 4.4s infinite alternate;
   display: flex;
   flex-direction: column;
 }
@@ -151,7 +151,7 @@ abbr {
 }
 .intro .preamble {
   padding: 25px;
-  animation: preamble 4.4s infinite alternate;
+  animation: preamble 2.2s infinite alternate;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -193,7 +193,7 @@ abbr {
 }
 .main .participation {
   padding: 25px;
-  animation: participation 2.2s infinite alternate;
+  animation: participation 6.6s infinite alternate;
 }
 @keyframes participation {
   0% {
@@ -238,7 +238,7 @@ abbr {
 }
 .main .requirements {
   padding: 25px;
-  animation: requirements 11s infinite alternate;
+  animation: requirements 2.2s infinite alternate;
   display: flex;
   flex-direction: column;
 }
@@ -287,7 +287,7 @@ abbr {
   gap: 15px;
 }
 .sidebar .wrapper .design-selection {
-  animation: design-selection 11s infinite alternate;
+  animation: design-selection 2.2s infinite alternate;
   padding: 25px;
   display: flex;
   flex-direction: column;
@@ -305,7 +305,7 @@ abbr {
   }
 }
 .sidebar .wrapper .design-archives {
-  animation: summary 6.6s infinite alternate;
+  animation: summary 11s infinite alternate;
   padding: 25px;
   display: flex;
   flex-direction: column;
@@ -324,7 +324,7 @@ abbr {
   }
 }
 .sidebar .wrapper .zen-resources {
-  animation: zen-resources 11s infinite alternate;
+  animation: zen-resources 8.8s infinite alternate;
   padding: 25px;
   display: flex;
   flex-direction: column;
