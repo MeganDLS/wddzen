@@ -72,11 +72,16 @@ body {
         margin-bottom: 0.4em;
         font-family: $sans-serif-font;
 
+        
+            
+    }
+
+    .triangle{
         width: 0;
         height: 0;
-        border-left: 50px solid transparent;
-        border-right: 50px solid transparent;
-        border-bottom: 100px solid $color-0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 20px solid $color-0;
     }
 
     a {
