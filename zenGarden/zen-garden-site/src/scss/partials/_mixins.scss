@@ -62,3 +62,14 @@
         }
     }
 }
+
+@mixin triangle($sizeH, $sizeV, $color) {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    padding-right: 4px;
+    border-style: solid;
+    border-width: $sizeV 0 $sizeV $sizeH;
+    border-color: transparent transparent transparent $color;
+}
